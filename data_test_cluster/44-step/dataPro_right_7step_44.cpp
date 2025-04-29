@@ -1,4 +1,3 @@
-// 统计每一步的概率
 #include <string>
 #include <iostream>
 #include <vector>
