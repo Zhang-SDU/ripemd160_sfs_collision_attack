@@ -123,8 +123,6 @@ int main() {
         0b00111100001111000110011011010101,
         0b10001011110011111111010111000111};    
 
-
-
     
     uint32_t m[16] = {0b11000100000010001100111101010011,
         0b00011110000111110101111011001111,
@@ -143,7 +141,6 @@ int main() {
         0b10001010111000011100000011111010,
         0b10111100000000000010101001100101};
 
-
     // X_-5 = h0 >>> 10; X_-4 = h4 >>> 10; X_-3 = h3 >>> 10; X_-2 = h2, X_-1 = h1
     vector<uint32_t> state_IV(5,0);
     state_IV[0] = rightRotate(initial_IV[0], 10);
@@ -159,7 +156,6 @@ int main() {
     }
 
     vector<uint32_t> m0(16, 0), m1(16, 0);
-
 
     // message pair
     for (int i = 0; i < 16; i++){
@@ -204,8 +200,7 @@ int main() {
 }
 
 
-
-
+// ################################### 41-step collision attack using the differential characteristic identified by our improved model ###################################
 // colliding message pair1
 // vector<uint32_t> initial_IV = {0b11100110111000010000000010000000,
 //     0b00101110011010000100110010100111,
@@ -335,7 +330,7 @@ int main() {
 //     0b01001100101000001100110000100010};
 
 
-// ################################### 41-step collision attack from FSE 2024 ###################################
+// ################################### 41-step collision attack using the differential characteristic from FSE 2024 ###################################
 
 // colliding messgae pair1
 // vector<uint32_t> initial_IV = {0b00010110101010110110011000101000,
@@ -361,7 +356,6 @@ int main() {
 //     0b10101011001110001111111111100101,
 //     0b10001010111000011100000011111010,
 //     0b10111100000000000010101001100101};
-
 
 
 // colliding message pair2
