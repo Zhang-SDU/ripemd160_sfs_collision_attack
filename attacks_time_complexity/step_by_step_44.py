@@ -51,7 +51,6 @@ def generate_insert_permutations(list1, list2):
     return result
 
 
-
 n1 = 3
 p1 = 27.168
 r = 43
@@ -64,7 +63,7 @@ backward = [[1, 1.508], [1, 0.093], [1, 0.001], [27, 1], [1, 1], [1, 1.001], [2,
 
 permutations = generate_insert_permutations(forward, backward)
 
-
+# p_2 + p_3
 total_pro = 82.170
 complexity = []
 for i in range(len(permutations)):
@@ -77,10 +76,8 @@ for i in range(len(permutations)):
         total_pro = total_pro - current_list[j][1]
     complexity.append(complexity_temp)
 
-
 min_complexity = min(complexity)
 index_min = complexity.index(min_complexity)
-
 
 print("Best verification order: ")
 print(permutations[index_min])
