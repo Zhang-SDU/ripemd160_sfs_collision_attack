@@ -149,12 +149,6 @@ int main() {
     state_IV[3] = initial_IV[2];
     state_IV[4] = initial_IV[1];
     
-
-    cout << "IV:" << endl;
-    for (int i = 0; i < 5; i++) {
-        cout << hex << state_IV[i] << endl;
-    }
-
     vector<uint32_t> m0(16, 0), m1(16, 0);
 
     // message pair
