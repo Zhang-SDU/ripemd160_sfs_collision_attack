@@ -167,7 +167,7 @@ int main() {
     hash0 = ripemd(initial_IV, state_IV, m0, step);
     hash1 = ripemd(initial_IV, state_IV, m1, step);
     
-    cout << endl << "CV0:" << endl;
+    cout << "CV0:" << endl;
     for (int i = 0; i < 5; i++) {
         cout << hex << initial_IV[i] << endl;
     }
