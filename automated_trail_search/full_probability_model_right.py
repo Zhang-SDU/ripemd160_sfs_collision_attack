@@ -986,8 +986,7 @@ class FunctionModel:
 
         obj += "ASSERT BVLE(pro, 0bin%s);\n" %bin(object_value)[2:].zfill(13)
 
-
-        # # 加入约束: 循环移位的概率
+        
         # obj += "ASSERT BVGE(BVPLUS(10,"
         # for i in range(self.__step, self.__bounds_rounds):
         #     if i == self.__bounds_rounds - 1:
