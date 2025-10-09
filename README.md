@@ -1,6 +1,6 @@
 # ripemd160_sfs_collision_attack
 
-This project primarily demonstrates New Semi-Free-Start Collision Attacks on RIPEMD-160.
+This project primarily demonstrates Improved Semi-Free-Start Collision Attacks on RIPEMD-160.
 
 The 'automated_trail_search' folder contains the codes for searching for left branch and right branch differential characteristics.
 
